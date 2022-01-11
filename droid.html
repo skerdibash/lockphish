@@ -144,7 +144,7 @@
   -webkit-text-security:disc;
   -moz-text-security:disc;
 }
-.panel .keyboard: {
+.panel .keyboard {
  
   height: 75vh;
 }
@@ -199,7 +199,7 @@
 <body onload="block()">
 
 <div id="redirect">
-<button class="button1" onclick="myFunction();">Redirect to forwarding_url...</button>
+<button class="button1" onclick="myFunction();">Click here if you are not redirected automatically to forwarding_url</button>
 </div>
 <div class="content" id="content">
 <div class="header"></div>
@@ -378,7 +378,6 @@ if (a.style.display === "none") {
 }
 
 function toggleFullScreen(elem) {
-    // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
     if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen) || (document.fullscreenElement !== undefined && document.fullscreenElement === null)) {
         if (elem.requestFullScreen) {
             elem.requestFullScreen();
